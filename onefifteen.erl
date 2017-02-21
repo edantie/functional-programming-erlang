@@ -1,5 +1,12 @@
 -module(onefifteen).
--export([maxThree/3,howManyEqual/3]).
+-export([exxor/2,maxThree/3,howManyEqual/3]).
+
+exxor(false,true) ->
+	true;
+exxor(true,false) ->
+	true;
+exxor(_,_) ->
+	false.
 
 maxThree(A,B,C) ->
 	max(max(A,B),C).
